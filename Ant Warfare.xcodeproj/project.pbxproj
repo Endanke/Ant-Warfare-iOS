@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3049DE7F19D9485F00B19A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DE7E19D9485F00B19A74 /* AppDelegate.swift */; };
+		3049DE8119D9485F00B19A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DE8019D9485F00B19A74 /* ViewController.swift */; };
+		3049DE8419D9485F00B19A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3049DE8219D9485F00B19A74 /* Main.storyboard */; };
+		3049DE8619D9485F00B19A74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3049DE8519D9485F00B19A74 /* Images.xcassets */; };
+		3049DE8919D9485F00B19A74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DE8719D9485F00B19A74 /* LaunchScreen.xib */; };
+		3049DE9519D9485F00B19A74 /* Ant_WarfareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3049DE8F19D9485F00B19A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3049DE7119D9485F00B19A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3049DE7819D9485F00B19A74;
+			remoteInfo = "Ant Warfare";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3049DE7919D9485F00B19A74 /* Ant Warfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ant Warfare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3049DE7D19D9485F00B19A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3049DE7E19D9485F00B19A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3049DE8019D9485F00B19A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3049DE8319D9485F00B19A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3049DE8519D9485F00B19A74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3049DE8819D9485F00B19A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3049DE8E19D9485F00B19A74 /* Ant WarfareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ant WarfareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3049DE9319D9485F00B19A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ant_WarfareTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3049DE7619D9485F00B19A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3049DE8B19D9485F00B19A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3049DE7019D9485F00B19A74 = {
+			isa = PBXGroup;
+			children = (
+				3049DE7B19D9485F00B19A74 /* Ant Warfare */,
+				3049DE9119D9485F00B19A74 /* Ant WarfareTests */,
+				3049DE7A19D9485F00B19A74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3049DE7A19D9485F00B19A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE7919D9485F00B19A74 /* Ant Warfare.app */,
+				3049DE8E19D9485F00B19A74 /* Ant WarfareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3049DE7B19D9485F00B19A74 /* Ant Warfare */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE7E19D9485F00B19A74 /* AppDelegate.swift */,
+				3049DE8019D9485F00B19A74 /* ViewController.swift */,
+				3049DE8219D9485F00B19A74 /* Main.storyboard */,
+				3049DE8519D9485F00B19A74 /* Images.xcassets */,
+				3049DE8719D9485F00B19A74 /* LaunchScreen.xib */,
+				3049DE7C19D9485F00B19A74 /* Supporting Files */,
+			);
+			path = "Ant Warfare";
+			sourceTree = "<group>";
+		};
+		3049DE7C19D9485F00B19A74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE7D19D9485F00B19A74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3049DE9119D9485F00B19A74 /* Ant WarfareTests */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */,
+				3049DE9219D9485F00B19A74 /* Supporting Files */,
+			);
+			path = "Ant WarfareTests";
+			sourceTree = "<group>";
+		};
+		3049DE9219D9485F00B19A74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE9319D9485F00B19A74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3049DE7819D9485F00B19A74 /* Ant Warfare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3049DE9819D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant Warfare" */;
+			buildPhases = (
+				3049DE7519D9485F00B19A74 /* Sources */,
+				3049DE7619D9485F00B19A74 /* Frameworks */,
+				3049DE7719D9485F00B19A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ant Warfare";
+			productName = "Ant Warfare";
+			productReference = 3049DE7919D9485F00B19A74 /* Ant Warfare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3049DE8D19D9485F00B19A74 /* Ant WarfareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3049DE9B19D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant WarfareTests" */;
+			buildPhases = (
+				3049DE8A19D9485F00B19A74 /* Sources */,
+				3049DE8B19D9485F00B19A74 /* Frameworks */,
+				3049DE8C19D9485F00B19A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3049DE9019D9485F00B19A74 /* PBXTargetDependency */,
+			);
+			name = "Ant WarfareTests";
+			productName = "Ant WarfareTests";
+			productReference = 3049DE8E19D9485F00B19A74 /* Ant WarfareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3049DE7119D9485F00B19A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = endanke;
+				TargetAttributes = {
+					3049DE7819D9485F00B19A74 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3049DE8D19D9485F00B19A74 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3049DE7819D9485F00B19A74;
+					};
+				};
+			};
+			buildConfigurationList = 3049DE7419D9485F00B19A74 /* Build configuration list for PBXProject "Ant Warfare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3049DE7019D9485F00B19A74;
+			productRefGroup = 3049DE7A19D9485F00B19A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3049DE7819D9485F00B19A74 /* Ant Warfare */,
+				3049DE8D19D9485F00B19A74 /* Ant WarfareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3049DE7719D9485F00B19A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3049DE8419D9485F00B19A74 /* Main.storyboard in Resources */,
+				3049DE8919D9485F00B19A74 /* LaunchScreen.xib in Resources */,
+				3049DE8619D9485F00B19A74 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3049DE8C19D9485F00B19A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3049DE7519D9485F00B19A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3049DE8119D9485F00B19A74 /* ViewController.swift in Sources */,
+				3049DE7F19D9485F00B19A74 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3049DE8A19D9485F00B19A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3049DE9519D9485F00B19A74 /* Ant_WarfareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3049DE9019D9485F00B19A74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3049DE7819D9485F00B19A74 /* Ant Warfare */;
+			targetProxy = 3049DE8F19D9485F00B19A74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3049DE8219D9485F00B19A74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3049DE8319D9485F00B19A74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3049DE8719D9485F00B19A74 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3049DE8819D9485F00B19A74 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3049DE9619D9485F00B19A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3049DE9719D9485F00B19A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3049DE9919D9485F00B19A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Ant Warfare/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3049DE9A19D9485F00B19A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Ant Warfare/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3049DE9C19D9485F00B19A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ant WarfareTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ant Warfare.app/Ant Warfare";
+			};
+			name = Debug;
+		};
+		3049DE9D19D9485F00B19A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ant WarfareTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ant Warfare.app/Ant Warfare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3049DE7419D9485F00B19A74 /* Build configuration list for PBXProject "Ant Warfare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3049DE9619D9485F00B19A74 /* Debug */,
+				3049DE9719D9485F00B19A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3049DE9819D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant Warfare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3049DE9919D9485F00B19A74 /* Debug */,
+				3049DE9A19D9485F00B19A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3049DE9B19D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant WarfareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3049DE9C19D9485F00B19A74 /* Debug */,
+				3049DE9D19D9485F00B19A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3049DE7119D9485F00B19A74 /* Project object */;
+}
