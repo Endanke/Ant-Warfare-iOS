@@ -13,6 +13,12 @@
 		3049DE8619D9485F00B19A74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3049DE8519D9485F00B19A74 /* Images.xcassets */; };
 		3049DE8919D9485F00B19A74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DE8719D9485F00B19A74 /* LaunchScreen.xib */; };
 		3049DE9519D9485F00B19A74 /* Ant_WarfareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */; };
+		3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA019D94A6500B19A74 /* GameViewController.swift */; };
+		3049DEA319D94A6500B19A74 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DEA119D94A6500B19A74 /* GameViewController.xib */; };
+		3049DEA619D94B0500B19A74 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA519D94B0500B19A74 /* Canvas.swift */; };
+		3049DEAA19D94F9E00B19A74 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA919D94F9E00B19A74 /* Head.swift */; };
+		3049DEAD19D9511F00B19A74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */; };
+		3049DEAE19D9511F00B19A74 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		3049DE8E19D9485F00B19A74 /* Ant WarfareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ant WarfareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3049DE9319D9485F00B19A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ant_WarfareTests.swift; sourceTree = "<group>"; };
+		3049DEA019D94A6500B19A74 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3049DEA119D94A6500B19A74 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		3049DEA519D94B0500B19A74 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		3049DEA919D94F9E00B19A74 /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				3049DE7E19D9485F00B19A74 /* AppDelegate.swift */,
-				3049DE8019D9485F00B19A74 /* ViewController.swift */,
-				3049DE8219D9485F00B19A74 /* Main.storyboard */,
+				3049DEA919D94F9E00B19A74 /* Head.swift */,
+				3049DEA419D94A6D00B19A74 /* UI */,
 				3049DE8519D9485F00B19A74 /* Images.xcassets */,
 				3049DE8719D9485F00B19A74 /* LaunchScreen.xib */,
 				3049DE7C19D9485F00B19A74 /* Supporting Files */,
@@ -110,6 +122,20 @@
 				3049DE9319D9485F00B19A74 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3049DEA419D94A6D00B19A74 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3049DE8019D9485F00B19A74 /* ViewController.swift */,
+				3049DE8219D9485F00B19A74 /* Main.storyboard */,
+				3049DEA019D94A6500B19A74 /* GameViewController.swift */,
+				3049DEA119D94A6500B19A74 /* GameViewController.xib */,
+				3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */,
+				3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */,
+				3049DEA519D94B0500B19A74 /* Canvas.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3049DEA319D94A6500B19A74 /* GameViewController.xib in Resources */,
 				3049DE8419D9485F00B19A74 /* Main.storyboard in Resources */,
 				3049DE8919D9485F00B19A74 /* LaunchScreen.xib in Resources */,
 				3049DE8619D9485F00B19A74 /* Images.xcassets in Resources */,
+				3049DEAE19D9511F00B19A74 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */,
+				3049DEAA19D94F9E00B19A74 /* Head.swift in Sources */,
 				3049DE8119D9485F00B19A74 /* ViewController.swift in Sources */,
+				3049DEA619D94B0500B19A74 /* Canvas.swift in Sources */,
 				3049DE7F19D9485F00B19A74 /* AppDelegate.swift in Sources */,
+				3049DEAD19D9511F00B19A74 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +437,7 @@
 				3049DE9A19D9485F00B19A74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3049DE9B19D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant WarfareTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +446,7 @@
 				3049DE9D19D9485F00B19A74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
