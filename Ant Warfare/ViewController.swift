@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController!.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,13 +21,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func newGamePressed(sender: UIButton) {
-        Head.shared().gameViewController = GameViewController(nibName:"GameViewController", bundle: nil)
-        self.navigationController?.pushViewController(Head.shared().gameViewController!, animated: true)
+        var gameViewController = GameViewController(nibName:"GameViewController", bundle: nil)
+        self.navigationController?.pushViewController(gameViewController, animated: true)
     }
 
-    @IBAction func settingsPressed(sender: UIButton) {
-        Head.shared().settingsViewController = SettingsViewController(nibName:"SettingsViewController", bundle: nil)
-        self.navigationController?.pushViewController(Head.shared().settingsViewController!, animated: true)
-    }
 }
 

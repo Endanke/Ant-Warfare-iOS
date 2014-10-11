@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TTx-8d-sFk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TTx-8d-sFk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -31,21 +31,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDW-8Z-x2Y">
-                                <rect key="frame" x="272" y="517" width="57" height="30"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="settingsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xNa-ej-BaW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MDW-8Z-x2Y" firstAttribute="top" secondItem="GpW-cw-r0u" secondAttribute="bottom" constant="17" id="Ehc-fs-beD"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GpW-cw-r0u" secondAttribute="bottom" constant="100" id="HWu-aE-HP3"/>
-                            <constraint firstAttribute="centerX" secondItem="MDW-8Z-x2Y" secondAttribute="centerX" id="HpR-tX-x4M"/>
                             <constraint firstAttribute="centerX" secondItem="GpW-cw-r0u" secondAttribute="centerX" id="bID-Zl-U3g"/>
                             <constraint firstItem="8dZ-os-HLn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="he3-qO-n6v"/>
                             <constraint firstAttribute="centerX" secondItem="8dZ-os-HLn" secondAttribute="centerX" id="k1H-KR-ce4"/>

@@ -15,10 +15,11 @@
 		3049DE9519D9485F00B19A74 /* Ant_WarfareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */; };
 		3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA019D94A6500B19A74 /* GameViewController.swift */; };
 		3049DEA319D94A6500B19A74 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DEA119D94A6500B19A74 /* GameViewController.xib */; };
-		3049DEA619D94B0500B19A74 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA519D94B0500B19A74 /* Canvas.swift */; };
-		3049DEAA19D94F9E00B19A74 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA919D94F9E00B19A74 /* Head.swift */; };
-		3049DEAD19D9511F00B19A74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */; };
-		3049DEAE19D9511F00B19A74 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */; };
+		3049DEA619D94B0500B19A74 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049DEA519D94B0500B19A74 /* Background.swift */; };
+		30ED8B4D19E6D7C1004951B6 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B4C19E6D7C1004951B6 /* Ant.swift */; };
+		30ED8B4F19E6D880004951B6 /* AntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B4E19E6D880004951B6 /* AntView.swift */; };
+		30ED8B5119E6DA35004951B6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B5019E6DA35004951B6 /* GameController.swift */; };
+		CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB56719E8008700E6C4BD /* Perlin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +45,11 @@
 		3049DE9419D9485F00B19A74 /* Ant_WarfareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ant_WarfareTests.swift; sourceTree = "<group>"; };
 		3049DEA019D94A6500B19A74 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3049DEA119D94A6500B19A74 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
-		3049DEA519D94B0500B19A74 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
-		3049DEA919D94F9E00B19A74 /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
-		3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		3049DEA519D94B0500B19A74 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		30ED8B4C19E6D7C1004951B6 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		30ED8B4E19E6D880004951B6 /* AntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntView.swift; sourceTree = "<group>"; };
+		30ED8B5019E6DA35004951B6 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		CBBDB56719E8008700E6C4BD /* Perlin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3049DE7E19D9485F00B19A74 /* AppDelegate.swift */,
-				3049DEA919D94F9E00B19A74 /* Head.swift */,
+				30ED8B4B19E6D7A5004951B6 /* Model */,
 				3049DEA419D94A6D00B19A74 /* UI */,
 				3049DE8519D9485F00B19A74 /* Images.xcassets */,
 				3049DE8719D9485F00B19A74 /* LaunchScreen.xib */,
@@ -131,11 +133,20 @@
 				3049DE8219D9485F00B19A74 /* Main.storyboard */,
 				3049DEA019D94A6500B19A74 /* GameViewController.swift */,
 				3049DEA119D94A6500B19A74 /* GameViewController.xib */,
-				3049DEAB19D9511F00B19A74 /* SettingsViewController.swift */,
-				3049DEAC19D9511F00B19A74 /* SettingsViewController.xib */,
-				3049DEA519D94B0500B19A74 /* Canvas.swift */,
+				3049DEA519D94B0500B19A74 /* Background.swift */,
+				30ED8B4E19E6D880004951B6 /* AntView.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		30ED8B4B19E6D7A5004951B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30ED8B4C19E6D7C1004951B6 /* Ant.swift */,
+				30ED8B5019E6DA35004951B6 /* GameController.swift */,
+				CBBDB56719E8008700E6C4BD /* Perlin.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +233,6 @@
 				3049DE8419D9485F00B19A74 /* Main.storyboard in Resources */,
 				3049DE8919D9485F00B19A74 /* LaunchScreen.xib in Resources */,
 				3049DE8619D9485F00B19A74 /* Images.xcassets in Resources */,
-				3049DEAE19D9511F00B19A74 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,11 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */,
-				3049DEAA19D94F9E00B19A74 /* Head.swift in Sources */,
+				CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */,
 				3049DE8119D9485F00B19A74 /* ViewController.swift in Sources */,
-				3049DEA619D94B0500B19A74 /* Canvas.swift in Sources */,
+				30ED8B4D19E6D7C1004951B6 /* Ant.swift in Sources */,
+				3049DEA619D94B0500B19A74 /* Background.swift in Sources */,
+				30ED8B4F19E6D880004951B6 /* AntView.swift in Sources */,
 				3049DE7F19D9485F00B19A74 /* AppDelegate.swift in Sources */,
-				3049DEAD19D9511F00B19A74 /* SettingsViewController.swift in Sources */,
+				30ED8B5119E6DA35004951B6 /* GameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

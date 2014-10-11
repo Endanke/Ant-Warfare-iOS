@@ -10,21 +10,26 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var centerLabel: UILabel!
-    var canvas : Canvas?
+    var background : Background?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        canvas = Canvas(frame: CGRectMake(0, 0, 200, 200))
-        self.view.addSubview(canvas!)
+        
+        var gc = GameController();
+        
+        background = Background(frame: self.view.bounds)
+        self.view.addSubview(background!)
+        
+        for object in gc.ants{
+            let ant = object as Ant
+            ant.view = AntView(frame: CGRectMake(100, 100, 50, 50))
+            self.view.addSubview(ant.view!)
+        }
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        centerLabel.text = Head.shared().textText
-        if(Head.shared().preloadedSubview != nil){
-            self.view.addSubview(Head.shared().preloadedSubview!)
-        }
     }
 
     override func didReceiveMemoryWarning() {
