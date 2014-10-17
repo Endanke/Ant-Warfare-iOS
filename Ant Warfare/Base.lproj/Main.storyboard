@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TTx-8d-sFk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TTx-8d-sFk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,30 +18,76 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpW-cw-r0u">
-                                <rect key="frame" x="262" y="470" width="76" height="30"/>
-                                <state key="normal" title="New Game">
+                                <rect key="frame" x="253" y="470" width="95" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="newGamePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hb5-vh-GRA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ant Warfare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-os-HLn">
-                                <rect key="frame" x="241" y="128" width="119" height="26"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANT WARFARE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-os-HLn">
+                                <rect key="frame" x="191" y="282" width="218" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teh-Yr-cnx">
+                                <rect key="frame" x="272" y="415" width="56" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="llu-NL-XYs"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHn-Xn-kwI">
+                                <rect key="frame" x="140" y="64" width="320" height="218"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-Nm-kPB" customClass="MenuAnt" customModule="Ant_Warfare" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49" width="320" height="120"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="FAs-wq-zfW"/>
+                                            <constraint firstAttribute="width" constant="320" id="iqF-bV-u4U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="Uwa-Nm-kPB" secondAttribute="centerY" id="6ia-ZG-Mpf"/>
+                                    <constraint firstAttribute="width" constant="320" id="Vho-AR-G4I"/>
+                                    <constraint firstAttribute="centerX" secondItem="Uwa-Nm-kPB" secondAttribute="centerX" id="XCp-k3-LS0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OHn-Xn-kwI" secondAttribute="centerX" id="7lM-PD-f7O"/>
+                            <constraint firstItem="OHn-Xn-kwI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="97i-C6-N2b"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GpW-cw-r0u" secondAttribute="bottom" constant="100" id="HWu-aE-HP3"/>
+                            <constraint firstItem="GpW-cw-r0u" firstAttribute="top" secondItem="Teh-Yr-cnx" secondAttribute="bottom" constant="25" id="OyJ-OV-1P9"/>
                             <constraint firstAttribute="centerX" secondItem="GpW-cw-r0u" secondAttribute="centerX" id="bID-Zl-U3g"/>
+                            <constraint firstItem="8dZ-os-HLn" firstAttribute="top" secondItem="OHn-Xn-kwI" secondAttribute="bottom" id="cCG-67-ch0"/>
                             <constraint firstItem="8dZ-os-HLn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="he3-qO-n6v"/>
                             <constraint firstAttribute="centerX" secondItem="8dZ-os-HLn" secondAttribute="centerX" id="k1H-KR-ce4"/>
+                            <constraint firstAttribute="centerY" secondItem="8dZ-os-HLn" secondAttribute="centerY" id="tEH-tl-NsM"/>
+                            <constraint firstAttribute="centerX" secondItem="Teh-Yr-cnx" secondAttribute="centerX" id="w3O-TI-vqc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="he3-qO-n6v"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="f48-Gq-Rsn"/>
+                    <connections>
+                        <outlet property="signInButton" destination="Teh-Yr-cnx" id="qus-2Y-QTw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

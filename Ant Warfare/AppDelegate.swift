@@ -14,9 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions:NSDictionary?) -> Bool {
+        
+        GPGManager.sharedInstance().realTimeRoomDelegate = MPManager.sharedInstance()
+        
+        if let options = launchOptions {
+            var remoteNotification = launchOptions!.objectForKey(UIApplicationLaunchOptionsRemoteNotificationKey) as NSDictionary
+
+            if(GPGManager.sharedInstance().tryHandleRemoteNotification(remoteNotification)){
+                //   NSLog(@"Handling notification %@ after sign-in is complete", remoteNotification);
+            }
+        }
+
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return GPPURLHandler.handleURL(url, sourceApplication: sourceApplication, annotation: annotation);
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -40,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

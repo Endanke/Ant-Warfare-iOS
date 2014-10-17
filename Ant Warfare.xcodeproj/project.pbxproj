@@ -19,6 +19,9 @@
 		30ED8B4D19E6D7C1004951B6 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B4C19E6D7C1004951B6 /* Ant.swift */; };
 		30ED8B4F19E6D880004951B6 /* AntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B4E19E6D880004951B6 /* AntView.swift */; };
 		30ED8B5119E6DA35004951B6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED8B5019E6DA35004951B6 /* GameController.swift */; };
+		7FF321F82D7591792E8A17A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16049F39FA1FA7D579C31BF7 /* libPods.a */; };
+		CB1880BA19F1679C005BF86C /* MenuAnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1880B919F1679C005BF86C /* MenuAnt.swift */; };
+		CB1880BD19F173E4005BF86C /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1880BC19F173E4005BF86C /* MPManager.m */; };
 		CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB56719E8008700E6C4BD /* Perlin.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16049F39FA1FA7D579C31BF7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3049DE7919D9485F00B19A74 /* Ant Warfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ant Warfare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3049DE7D19D9485F00B19A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3049DE7E19D9485F00B19A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +50,16 @@
 		3049DEA019D94A6500B19A74 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3049DEA119D94A6500B19A74 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		3049DEA519D94B0500B19A74 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		3081DD6F19F019BE00144954 /* Ant Warfare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ant Warfare-Bridging-Header.h"; sourceTree = "<group>"; };
 		30ED8B4C19E6D7C1004951B6 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
 		30ED8B4E19E6D880004951B6 /* AntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntView.swift; sourceTree = "<group>"; };
 		30ED8B5019E6DA35004951B6 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		AD8FC487AF63B256280D29AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1880B919F1679C005BF86C /* MenuAnt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnt.swift; sourceTree = "<group>"; };
+		CB1880BB19F173E4005BF86C /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
+		CB1880BC19F173E4005BF86C /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
 		CBBDB56719E8008700E6C4BD /* Perlin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin.swift; sourceTree = "<group>"; };
+		F65D3622F2D9E0D645EDE516 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF321F82D7591792E8A17A6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,8 @@
 				3049DE7B19D9485F00B19A74 /* Ant Warfare */,
 				3049DE9119D9485F00B19A74 /* Ant WarfareTests */,
 				3049DE7A19D9485F00B19A74 /* Products */,
+				A08B5933A5F5A4C77571FB92 /* Pods */,
+				7462F6FE28B8E67C137FEB45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3049DE7E19D9485F00B19A74 /* AppDelegate.swift */,
+				3081DD6F19F019BE00144954 /* Ant Warfare-Bridging-Header.h */,
 				30ED8B4B19E6D7A5004951B6 /* Model */,
 				3049DEA419D94A6D00B19A74 /* UI */,
 				3049DE8519D9485F00B19A74 /* Images.xcassets */,
@@ -135,6 +149,7 @@
 				3049DEA119D94A6500B19A74 /* GameViewController.xib */,
 				3049DEA519D94B0500B19A74 /* Background.swift */,
 				30ED8B4E19E6D880004951B6 /* AntView.swift */,
+				CB1880B919F1679C005BF86C /* MenuAnt.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -142,11 +157,30 @@
 		30ED8B4B19E6D7A5004951B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB1880BB19F173E4005BF86C /* MPManager.h */,
+				CB1880BC19F173E4005BF86C /* MPManager.m */,
 				30ED8B4C19E6D7C1004951B6 /* Ant.swift */,
 				30ED8B5019E6DA35004951B6 /* GameController.swift */,
 				CBBDB56719E8008700E6C4BD /* Perlin.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7462F6FE28B8E67C137FEB45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16049F39FA1FA7D579C31BF7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A08B5933A5F5A4C77571FB92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD8FC487AF63B256280D29AC /* Pods.debug.xcconfig */,
+				F65D3622F2D9E0D645EDE516 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3049DE9819D9485F00B19A74 /* Build configuration list for PBXNativeTarget "Ant Warfare" */;
 			buildPhases = (
+				57CB94177DE52F319F732DAF /* Check Pods Manifest.lock */,
 				3049DE7519D9485F00B19A74 /* Sources */,
 				3049DE7619D9485F00B19A74 /* Frameworks */,
 				3049DE7719D9485F00B19A74 /* Resources */,
+				30767DB8DD5B8642BBE97422 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,16 +281,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30767DB8DD5B8642BBE97422 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57CB94177DE52F319F732DAF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3049DE7519D9485F00B19A74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1880BA19F1679C005BF86C /* MenuAnt.swift in Sources */,
 				3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */,
 				CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */,
 				3049DE8119D9485F00B19A74 /* ViewController.swift in Sources */,
 				30ED8B4D19E6D7C1004951B6 /* Ant.swift in Sources */,
 				3049DEA619D94B0500B19A74 /* Background.swift in Sources */,
+				CB1880BD19F173E4005BF86C /* MPManager.m in Sources */,
 				30ED8B4F19E6D880004951B6 /* AntView.swift in Sources */,
 				3049DE7F19D9485F00B19A74 /* AppDelegate.swift in Sources */,
 				30ED8B5119E6DA35004951B6 /* GameController.swift in Sources */,
@@ -378,23 +449,30 @@
 		};
 		3049DE9919D9485F00B19A74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8FC487AF63B256280D29AC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Ant Warfare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ant Warfare/Ant Warfare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3049DE9A19D9485F00B19A74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65D3622F2D9E0D645EDE516 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Ant Warfare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ant Warfare/Ant Warfare-Bridging-Header.h";
 			};
 			name = Release;
 		};
