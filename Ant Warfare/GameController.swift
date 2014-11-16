@@ -8,22 +8,93 @@
 
 import UIKit
 
+private let _singletonInstance = GameController()
+
 class GameController: NSObject {
-    var ants : NSMutableArray
+    var ants : [Ant] = []
+    var enemyCount = 0
+    var gameOver = false
+    
+    class var sharedInstance: GameController {
+        return _singletonInstance
+    }
     
     override init() {
-        ants = NSMutableArray()
-        ants.addObject(Ant())
-        ants.addObject(Ant())
-        ants.addObject(Ant())
         super.init()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+    }
+    
+    func newGame(){
+        ants.removeAll(keepCapacity: false)
+        ants.append(Ant())
+        ants.append(Ant())
+        ants.append(Ant())
+        gameOver = false
     }
     
     func update() {
-        for object in ants{
-            let ant = object as Ant
+        checkStatus()
+        var i = 0
+        enemyCount = 0
+        for ant in ants{
             ant.step()
+            if(ant.out){
+                self.remoteUpdate()
+                ant.view!.hidden = true
+                self.ants.removeAtIndex(find(ants,ant)!)
+            }
+            if(!ant.enemy && ant.targetSize != 0){
+                for other in ants{
+                    if(other.enemy && !other.isEqual(ant) && other.targetSize != 0){
+                        if(CGRectContainsPoint(ant.view!.frame, other.view!.center)){
+                            antsToFight(ant, enemyAnt: other)
+                        }
+                    }
+                }
+            }
+            if(ant.targetSize != 0){
+                i++
+                if(ant.enemy){
+                    enemyCount++
+                }
+            }
+        }
+        if(i == enemyCount){
+            println(ants)
+            if(enemyCount > 0){
+                MPManager.sharedInstance().sendGameOver()
+                gameOver = true
+            }
         }
     }
+    
+    func remoteUpdate(){
+        MPManager.sharedInstance().sendOneAntAtY(100)
+    }
+    
+    func antsToFight(myAnt : Ant, enemyAnt : Ant){
+        println("contact");
+        if(arc4random_uniform(2) == 1 || enemyAnt.strike == 1){
+            enemyAnt.targetSize = 0.0
+        }else{
+            myAnt.targetSize = 0.0
+            enemyAnt.strike++
+        }
+    }
+    
+    func checkStatus(){
+        //if(enemyAnts.count == ants.count){
+        // gameover
+        //}
+    }
+    
+    func send(to : CGPoint){
+        for ant in ants{
+            if(ant.randomStep != false){
+                ant.randomStep = false
+                ant.destination = to
+                return;
+            }
+        }
+    }
+    
 }

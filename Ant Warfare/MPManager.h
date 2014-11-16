@@ -26,7 +26,8 @@
 @end
 
 @protocol MPGameDelegate
-- (void)playerWithId:(NSString *)playerId reportedScore:(int)score isFinal:(BOOL)final;
+- (void)setWin;
+- (void)incomingAntWithY:(int)y;
 - (void)playerSetMayHaveChanged;
 @end
 
@@ -35,6 +36,7 @@
 @property (nonatomic, weak) id<MPLobbyDelegate> lobbyDelegate;
 @property (nonatomic, weak) id<MPGameDelegate> gameDelegate;
 @property (nonatomic, readonly) GPGRealTimeRoom *roomToTrack;
+@property (nonatomic) int position;
 
 /**
  * Accessor method for the singleton instance
@@ -57,12 +59,15 @@
 - (void)startInvitationGameWithMinPlayers:(int)minPlayers maxPlayers:(int)maxPlayers;
 
 /**
- * Sends your player's score to everybody else in the room
- *
- * @param score Total score up to this point
- * @param isFinal Is this the player's final score? 
+ * Sends the game over message to the other player
  */
-- (void)sendPlayersMyScore:(int)score isFinal:(BOOL)isFinal;
+- (void)sendGameOver;
+
+/**
+ * Sends one Ant to the opponents device
+ * @param y The outgoing and incomming Y position
+ */
+- (void)sendOneAntAtY:(int)y;
 
 /**
  * Safely leaves the room and alerts the other players. Typically called at the end of a 

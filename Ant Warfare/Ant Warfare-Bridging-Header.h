@@ -5,3 +5,4 @@
 #import <GooglePlayGames/GooglePlayGames.h>
 #import <GooglePlus/GooglePlus.h>
 #import "MPManager.h"
+#import "KFPerlin.h"

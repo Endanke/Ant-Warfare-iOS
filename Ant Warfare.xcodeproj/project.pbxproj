@@ -22,6 +22,7 @@
 		7FF321F82D7591792E8A17A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16049F39FA1FA7D579C31BF7 /* libPods.a */; };
 		CB1880BA19F1679C005BF86C /* MenuAnt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1880B919F1679C005BF86C /* MenuAnt.swift */; };
 		CB1880BD19F173E4005BF86C /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1880BC19F173E4005BF86C /* MPManager.m */; };
+		CBB81BFC1A16D331008405B7 /* KFPerlin.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB81BFB1A16D331008405B7 /* KFPerlin.m */; };
 		CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDB56719E8008700E6C4BD /* Perlin.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		CB1880B919F1679C005BF86C /* MenuAnt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnt.swift; sourceTree = "<group>"; };
 		CB1880BB19F173E4005BF86C /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
 		CB1880BC19F173E4005BF86C /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
+		CBB81BFA1A16D331008405B7 /* KFPerlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFPerlin.h; sourceTree = "<group>"; };
+		CBB81BFB1A16D331008405B7 /* KFPerlin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFPerlin.m; sourceTree = "<group>"; };
 		CBBDB56719E8008700E6C4BD /* Perlin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin.swift; sourceTree = "<group>"; };
 		F65D3622F2D9E0D645EDE516 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +162,8 @@
 			children = (
 				CB1880BB19F173E4005BF86C /* MPManager.h */,
 				CB1880BC19F173E4005BF86C /* MPManager.m */,
+				CBB81BFA1A16D331008405B7 /* KFPerlin.h */,
+				CBB81BFB1A16D331008405B7 /* KFPerlin.m */,
 				30ED8B4C19E6D7C1004951B6 /* Ant.swift */,
 				30ED8B5019E6DA35004951B6 /* GameController.swift */,
 				CBBDB56719E8008700E6C4BD /* Perlin.swift */,
@@ -234,6 +239,7 @@
 				TargetAttributes = {
 					3049DE7819D9485F00B19A74 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = JNF38M8WX5;
 					};
 					3049DE8D19D9485F00B19A74 = {
 						CreatedOnToolsVersion = 6.0;
@@ -319,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB81BFC1A16D331008405B7 /* KFPerlin.m in Sources */,
 				CB1880BA19F1679C005BF86C /* MenuAnt.swift in Sources */,
 				3049DEA219D94A6500B19A74 /* GameViewController.swift in Sources */,
 				CBBDB56819E8008700E6C4BD /* Perlin.swift in Sources */,
@@ -453,10 +460,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Ant Warfare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant Warfare/Ant Warfare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -468,10 +478,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Ant Warfare/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ant Warfare/Ant Warfare-Bridging-Header.h";
 			};
 			name = Release;

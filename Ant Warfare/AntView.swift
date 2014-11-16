@@ -9,6 +9,8 @@
 import UIKit
 
 class AntView: UIView {
+    var color = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.000)
+    var ant = Ant()
     
     override func willMoveToSuperview(newSuperview: UIView?) {
         backgroundColor = UIColor.clearColor()
@@ -17,13 +19,11 @@ class AntView: UIView {
     override func drawRect(rect: CGRect){
         let context = UIGraphicsGetCurrentContext()
         
-        let color = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.000)
-        
         let shadow = UIColor.blackColor().colorWithAlphaComponent(0.9)
         let shadowOffset = CGSizeMake(0.1, 1.1)
         let shadowBlurRadius: CGFloat = 3
         
-        var ovalPath = UIBezierPath(ovalInRect: CGRectMake(frame.size.width/4, frame.size.height/4, frame.size.width/2, frame.size.height/2))
+        var ovalPath = UIBezierPath(ovalInRect: CGRectMake(ant.size!/4, ant.size!/4, ant.size!/2, ant.size!/2))
         CGContextSaveGState(context)
         CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, shadow.CGColor)
         color.setFill()

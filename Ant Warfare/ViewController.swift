@@ -24,6 +24,12 @@ class ViewController: UIViewController, GPGStatusDelegate, MPLobbyDelegate {
         self.refreshInterfaceBasedOnSignIn()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+//        var gameViewController = GameViewController(nibName:"GameViewController", bundle: nil)
+//        self.navigationController?.pushViewController(gameViewController, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,31 +66,7 @@ class ViewController: UIViewController, GPGStatusDelegate, MPLobbyDelegate {
             println("rightpresent")
         }
     }
-    
-    /*
-    - (void)multiPlayerGameWasCanceled {
-    if (self.presentedViewController != nil) {
-    [self dismissViewControllerAnimated:YES completion:nil];
-    }
-    }
-    
-    - (void)readyToStartMultiPlayerGame {
-    // I can still sometimes receive this if we're in the middle of a game
-    if (![[self.navigationController.viewControllers lastObject] isEqual:self]) {
-    return;
-    }
-    
-    if (self.presentedViewController != nil) {
-    [self dismissViewControllerAnimated:YES completion:^{
-    [self performSegueWithIdentifier:@"SegueToGame" sender:self];
-    }];
-    } else {
-    [self performSegueWithIdentifier:@"SegueToGame" sender:self];
-    }
-    }
-
-*/
-    
+ 
     // MARK: Sign in functions
     
     func didFinishGamesSignInWithError(error: NSError!) {
