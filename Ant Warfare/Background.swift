@@ -23,6 +23,21 @@ class Background: UIView {
         
         let color = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.000)
         
+        var bezierPath = UIBezierPath()
+        if(MPManager.sharedInstance().position == 1){
+            bezierPath.moveToPoint(CGPointMake(0, (screenSize.height/2)+50))
+            bezierPath.addLineToPoint(CGPointMake(0, (screenSize.height/2)-50))
+            bezierPath.addLineToPoint(CGPointMake(27.5, (screenSize.height/2)))
+            bezierPath.addLineToPoint(CGPointMake(0, (screenSize.height/2)+50))
+        }else{
+            bezierPath.moveToPoint(CGPointMake(screenSize.width, (screenSize.height/2)+50))
+            bezierPath.addLineToPoint(CGPointMake(screenSize.width, (screenSize.height/2)-50))
+            bezierPath.addLineToPoint(CGPointMake(screenSize.width-27.5, (screenSize.height/2)))
+            bezierPath.addLineToPoint(CGPointMake(screenSize.width, (screenSize.height/2)+50))
+        }
+        bezierPath.closePath()
+        bezierPath.stroke()
+
         var ovalPath = UIBezierPath(ovalInRect: CGRectMake(screenSize.width/2-size/2, screenSize.height/2-size/2, size, size))
         CGContextSaveGState(context)
         color.setStroke()

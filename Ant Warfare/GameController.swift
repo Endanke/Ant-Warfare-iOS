@@ -12,7 +12,6 @@ private let _singletonInstance = GameController()
 
 class GameController: NSObject {
     var ants : [Ant] = []
-    var enemyCount = 0
     var gameOver = false
     
     class var sharedInstance: GameController {
@@ -32,16 +31,18 @@ class GameController: NSObject {
     }
     
     func update() {
-        checkStatus()
-        var i = 0
-        enemyCount = 0
+        var aliveAnts = 0
+        var enemyCount = 0
         for ant in ants{
+            
             ant.step()
+            
             if(ant.out){
                 self.remoteUpdate()
                 ant.view!.hidden = true
                 self.ants.removeAtIndex(find(ants,ant)!)
             }
+            
             if(!ant.enemy && ant.targetSize != 0){
                 for other in ants{
                     if(other.enemy && !other.isEqual(ant) && other.targetSize != 0){
@@ -51,20 +52,24 @@ class GameController: NSObject {
                     }
                 }
             }
+            
             if(ant.targetSize != 0){
-                i++
+                aliveAnts++
                 if(ant.enemy){
                     enemyCount++
                 }
             }
+            
         }
-        if(i == enemyCount){
+        
+        if(aliveAnts == enemyCount){
             println(ants)
             if(enemyCount > 0){
                 MPManager.sharedInstance().sendGameOver()
                 gameOver = true
             }
         }
+        
     }
     
     func remoteUpdate(){
@@ -79,12 +84,6 @@ class GameController: NSObject {
             myAnt.targetSize = 0.0
             enemyAnt.strike++
         }
-    }
-    
-    func checkStatus(){
-        //if(enemyAnts.count == ants.count){
-        // gameover
-        //}
     }
     
     func send(to : CGPoint){

@@ -58,17 +58,17 @@ class Ant: NSObject {
             
         }else{
             if(view!.center.x < destination?.x){
-                view!.center = CGPointMake(view!.center.x + 0.3, view!.center.y)
+                view!.center = CGPointMake(view!.center.x + 0.5, view!.center.y)
             }
             if(view!.center.x > destination?.x){
-                view!.center = CGPointMake(view!.center.x - 0.3, view!.center.y)
+                view!.center = CGPointMake(view!.center.x - 0.5, view!.center.y)
             }
             
             if(view!.center.y < destination?.y){
-                view!.center = CGPointMake(view!.center.x, view!.center.y + 0.3)
+                view!.center = CGPointMake(view!.center.x, view!.center.y + 0.5)
             }
             if(view!.center.y > destination?.y){
-                view!.center = CGPointMake(view!.center.x, view!.center.y - 0.3)
+                view!.center = CGPointMake(view!.center.x, view!.center.y - 0.5)
             }
             if(view!.center.x > screenSize.width || view!.center.x < 0 || view!.center.y < 0 || view!.center.y > screenSize.height){
                 arrived()
